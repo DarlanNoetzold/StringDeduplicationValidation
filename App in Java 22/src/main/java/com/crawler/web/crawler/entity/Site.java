@@ -1,6 +1,7 @@
 package com.crawler.web.crawler.entity;
 
-import javax.persistence.*;
+import jakarta.persistence.*;
+
 
 @Entity
 public class Site {
