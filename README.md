@@ -59,14 +59,17 @@ To run the application and validate the custom deduplication solution, follow th
    gcc -shared -o libdeduplication.dll -fPIC -I"C:\Program Files\Java\jdk-22\include" -I"C:\Program Files\Java\jdk-22\include\win32" deduplication.c
  ```
 3. **Place the compiled library in the appropriate directory:**
+ ```sh
    mv libdeduplication.so /path/to/your/library/directory
-
-4. **Set the `java.library.path` to the directory containing the library:**
+ ```
+5. **Set the `java.library.path` to the directory containing the library:**
+ ```sh
    java -Djava.library.path=/path/to/your/library/directory -jar your-application.jar
-
-5. **Run the application:**
+```
+7. **Run the application:**
+ ```sh
    ./mvnw spring-boot:run
-
+```
 For more detailed instructions, refer to the [Improve String Deduplication in Java 21](https://github.com/DarlanNoetzold/StringDeduplicationValidation/tree/main/Emprove%20StringDeduplication%20in%20Java%2021) directory.
 
 ## Conclusion
