@@ -1,0 +1,57 @@
+2024-07-10T16:53:11.043-03:00  INFO 21564 --- [           main] c.c.web.crawler.CrawlerApplication       : Starting CrawlerApplication using Java 22.0.1 with PID 21564 (C:\Users\Usuário\Documents\Projetos\GitHub\StringDeduplicationValidation\Emprove StringDeduplication in Java 21\target\classes started by Darlan in C:\Users\Usuário\Documents\Projetos\GitHub\StringDeduplicationValidation\Emprove StringDeduplication in Java 21)
+2024-07-10T16:53:11.047-03:00  INFO 21564 --- [           main] c.c.web.crawler.CrawlerApplication       : No active profile set, falling back to 1 default profile: "default"
+2024-07-10T16:53:11.714-03:00  INFO 21564 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-07-10T16:53:11.785-03:00  INFO 21564 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 61 ms. Found 1 JPA repository interface.
+2024-07-10T16:53:12.344-03:00  INFO 21564 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8022 (http)
+2024-07-10T16:53:12.356-03:00  INFO 21564 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-07-10T16:53:12.356-03:00  INFO 21564 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.24]
+2024-07-10T16:53:12.405-03:00  INFO 21564 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-07-10T16:53:12.406-03:00  INFO 21564 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1297 ms
+2024-07-10T16:53:12.441-03:00  INFO 21564 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-07-10T16:53:12.615-03:00  INFO 21564 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection conn0: url=jdbc:h2:mem:testdb user=SA
+2024-07-10T16:53:12.617-03:00  INFO 21564 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-07-10T16:53:12.626-03:00  INFO 21564 --- [           main] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2'. Database available at 'jdbc:h2:mem:testdb'
+2024-07-10T16:53:12.754-03:00  INFO 21564 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-07-10T16:53:12.816-03:00  INFO 21564 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.2.Final
+2024-07-10T16:53:12.862-03:00  INFO 21564 --- [           main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-07-10T16:53:13.147-03:00  INFO 21564 --- [           main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-07-10T16:53:13.194-03:00  WARN 21564 --- [           main] org.hibernate.orm.deprecation            : HHH90000025: H2Dialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-07-10T16:53:13.826-03:00  INFO 21564 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-07-10T16:53:13.851-03:00  INFO 21564 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-07-10T16:53:13.864-03:00  INFO 21564 --- [           main] com.crawler.web.crawler.CrawlerTask      : Biblioteca nativa carregada com sucesso.
+2024-07-10T16:53:14.166-03:00  WARN 21564 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-07-10T16:53:14.503-03:00  INFO 21564 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8022 (http) with context path '/'
+2024-07-10T16:53:14.512-03:00  INFO 21564 --- [           main] c.c.web.crawler.CrawlerApplication       : Started CrawlerApplication in 3.944 seconds (process running for 4.345)
+2024-07-10T16:53:18.606-03:00  INFO 21564 --- [nio-8022-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-07-10T16:53:18.606-03:00  INFO 21564 --- [nio-8022-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-07-10T16:53:18.607-03:00  INFO 21564 --- [nio-8022-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2024-07-10T16:53:18.642-03:00  INFO 21564 --- [nio-8022-exec-1] c.c.w.c.controller.CrawlerController     :  depth 10000
+2024-07-10T16:53:18.642-03:00  INFO 21564 --- [nio-8022-exec-1] c.c.w.c.controller.CrawlerController     :  seed https://en.wikipedia.org/wiki
+2024-07-10T16:53:18.643-03:00  INFO 21564 --- [nio-8022-exec-1] com.crawler.web.crawler.CrawlerTask      : Making request: https://en.wikipedia.org/wiki
+2024-07-10T16:53:19.826-03:00  INFO 21564 --- [nio-8022-exec-1] com.crawler.web.crawler.WebSite          :  .. response code .. 200
+2024-07-10T16:53:20.285-03:00  INFO 21564 --- [nio-8022-exec-1] com.crawler.web.crawler.CrawlerTask      : Received response.
+
+INFO: Starting the crawling process for URL: https://en.wikipedia.org/wiki
+INFO: User depth reached.
+INFO: Making request: https://en.wikipedia.org/wiki/Main_Page
+INFO: Received response.
+INFO: Calling deduplicateStrings method...
+INFO: Deduplication time: 12345678 ns
+INFO: Native stdout logs:
+Inspected Strings: 1532812
+Deduplicated Strings: 1252191
+Deduplicated Size: 110207281 bytes
+Deduplicated Percentage: 31.10%
+Deduplication Time: 2421.492 ms
+SEVERE: Native stderr logs:
+
+INFO: Queue size: 10000
+INFO: Title: Main Page - Wikipedia
+INFO: Saved: Main Page - Wikipedia
+INFO: Depth count 1 for crawlID_154674512
+INFO: Finished crawling sites for https://en.wikipedia.org/wiki
+INFO: Processing completed for crawlID_154674512
+2024-07-10T16:53:20.367-03:00  INFO 21564 --- [nio-8022-exec-1] com.crawler.web.crawler.HTMLDocument     :  .. process images ..
+2024-07-10T16:53:20.368-03:00  INFO 21564 --- [nio-8022-exec-1] com.crawler.web.crawler.HTMLDocument     :  .. process titles ..
+2024-07-10T16:53:20.369-03:00  INFO 21564 --- [nio-8022-exec-1] com.crawler.web.crawler.HTMLDocument     : .. finished ...
+INFO: Native library loaded successfully.
