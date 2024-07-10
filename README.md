@@ -70,3 +70,5 @@ For more detailed instructions, refer to the [Improve String Deduplication in Ja
 
 ## Conclusion
 The results indicate that while String Deduplication offers memory savings, its efficiency diminishes in newer JVM versions. The custom solution for Java 21 demonstrates potential improvements, offering valuable insights for developers and engineers in optimizing JVM performance.
+
+⭐️ From [DarlanNoetzold](https://github.com/DarlanNoetzold)
