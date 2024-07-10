@@ -55,15 +55,16 @@ To integrate the C algorithm with the Java application, the native method `dedup
 To run the application and validate the custom deduplication solution, follow these steps:
 
 1. **Compile the C code:**
-   gcc -shared -o libdeduplication.so -fPIC -I${JAVA_HOME}/include -I${JAVA_HOME}/include/linux deduplication.c
-
-2. **Place the compiled library in the appropriate directory:**
+ ```sh
+   gcc -shared -o libdeduplication.dll -fPIC -I"C:\Program Files\Java\jdk-22\include" -I"C:\Program Files\Java\jdk-22\include\win32" deduplication.c
+ ```
+3. **Place the compiled library in the appropriate directory:**
    mv libdeduplication.so /path/to/your/library/directory
 
-3. **Set the `java.library.path` to the directory containing the library:**
+4. **Set the `java.library.path` to the directory containing the library:**
    java -Djava.library.path=/path/to/your/library/directory -jar your-application.jar
 
-4. **Run the application:**
+5. **Run the application:**
    ./mvnw spring-boot:run
 
 For more detailed instructions, refer to the [Improve String Deduplication in Java 21](https://github.com/DarlanNoetzold/StringDeduplicationValidation/tree/main/Emprove%20StringDeduplication%20in%20Java%2021) directory.
