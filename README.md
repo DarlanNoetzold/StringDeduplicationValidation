@@ -48,7 +48,7 @@ The performance metrics, including CPU and memory usage with and without String 
 ## Custom Deduplication Solution
 The custom deduplication algorithm implemented in C for Java 21 significantly improves the performance of String Deduplication. The algorithm utilizes a hash map to track and remove duplicate strings efficiently.
 
-- [Improve String Deduplication in Java 21](https://github.com/DarlanNoetzold/StringDeduplicationValidation/tree/main/Emprove%20StringDeduplication%20in%20Java%2021)****
+- [Improve String Deduplication in Java 21](https://github.com/DarlanNoetzold/StringDeduplicationValidation/tree/main/Emprove%20StringDeduplication%20in%20Java%2021)
 
 Results:
  - [logs](https://github.com/DarlanNoetzold/StringDeduplicationValidation/blob/main/Emprove%20StringDeduplication%20in%20Java%2021/java_gc_log1.log)
