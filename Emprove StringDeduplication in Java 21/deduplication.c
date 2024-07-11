@@ -46,7 +46,7 @@ void insert(HashMap *hashMap, const char *key) {
     Entry *entry = hashMap->entries[slot];
     while (entry != NULL) {
         if (strcmp(entry->key, key) == 0) {
-            return; // Key already exists, no need to insert
+            return;
         }
         entry = entry->next;
     }
@@ -70,11 +70,11 @@ int contains(HashMap *hashMap, const char *key) {
     Entry *entry = hashMap->entries[slot];
     while (entry != NULL) {
         if (strcmp(entry->key, key) == 0) {
-            return 1; // Key found
+            return 1;
         }
         entry = entry->next;
     }
-    return 0; // Key not found
+    return 0;
 }
 
 void deduplicateStrings(char **strings, int length, int *inspectedCount, int *deduplicatedCount, size_t *deduplicatedSize) {
@@ -115,7 +115,6 @@ JNIEXPORT void JNICALL Java_OptimizedStringDeduplication_deduplicateStrings
         (*env)->ReleaseStringUTFChars(env, jStr, str);
         if (!strings[i]) {
             fprintf(stderr, "Failed to duplicate string\n");
-            // Free already allocated strings
             for (int j = 0; j < i; j++) {
                 free(strings[j]);
             }
@@ -137,7 +136,7 @@ JNIEXPORT void JNICALL Java_OptimizedStringDeduplication_deduplicateStrings
     printf("Deduplicated Percentage: %.2f%%\n", (double)deduplicatedCount / inspectedCount * 100);
     printf("Deduplication Time: %.2f ms\n", deduplicationTime);
 
-    fflush(stdout); // Ensure that the logs are flushed immediately
+    fflush(stdout);
 
     for (int i = 0; i < length; i++) {
         if (strings[i] != NULL) {
