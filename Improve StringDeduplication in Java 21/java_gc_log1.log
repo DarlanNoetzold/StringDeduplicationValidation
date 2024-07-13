@@ -36,7 +36,6 @@ INFO: User depth reached.
 INFO: Making request: https://en.wikipedia.org/wiki/Main_Page
 INFO: Received response.
 INFO: Calling deduplicateStrings method...
-INFO: Deduplication time: 12345678 ns
 INFO: Native stdout logs:
 Inspected Strings: 1532812
 Deduplicated Strings: 1252191
